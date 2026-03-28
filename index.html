@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Декларация о соответствии ЕАЭС</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: linear-gradient(145deg, #f6f9fc 0%, #eef2f5 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .card {
+            max-width: 1000px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.96);
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #1a4d8c;
+            padding: 1.8rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1rem;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1.5rem;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a4d8c;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-left: 4px solid #1a4d8c;
+            padding-left: 1rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 0.75rem 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #2c3e4e;
+            min-width: 180px;
+            background: #f0f4f9;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+        }
+
+        .info-value {
+            color: #1e2a3e;
+            flex: 1;
+        }
+
+        .badge-status {
+            display: inline-block;
+            background: #2b7e3a;
+            color: white;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .sub-section {
+            margin-top: 1rem;
+            margin-left: 0.5rem;
+            border-left: 2px solid #cbd5e1;
+            padding-left: 1rem;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer-note {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #5a6e7c;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 1rem;
+            }
+            .content {
+                padding: 1.2rem;
+            }
+            .info-item {
+                flex-direction: column;
+                gap: 0.2rem;
+                margin-bottom: 0.8rem;
+            }
+            .info-label {
+                min-width: auto;
+                display: inline-block;
+                width: fit-content;
+            }
+            .section-title {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <h1>Декларация о соответствии ЕАЭС</h1>
+            <p>Сведения из реестра документов об оценке соответствия</p>
+        </div>
+        <div class="content">
+            <!-- Общие сведения -->
+            <div class="section">
+                <div class="section-title">📄 Основная информация</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">Регистрационный номер</span><span class="info-value">ЕАЭС № BY/177 17.01. ТР034 153.01 46268</span></div>
+                    <div class="info-item"><span class="info-label">Статус</span><span class="info-value"><span class="badge-status">Действует</span> с 28.03.2026 по 27.03.2029</span></div>
+                    <div class="info-item"><span class="info-label">Вид документа</span><span class="info-value">Декларация о соответствии ТР ЕАЭС</span></div>
+                    <div class="info-item"><span class="info-label">Схема декларирования</span><span class="info-value">3д</span></div>
+                    <div class="info-item"><span class="info-label">Код объекта оценки</span><span class="info-value">11.01 (серийная продукция)</span></div>
+                    <div class="info-item"><span class="info-label">Технические регламенты</span><span class="info-value">ТР ТС 034/2013, 021/2011, 022/2011, 029/2012</span></div>
+                </div>
+            </div>
+
+            <!-- Объект оценки -->
+            <div class="section">
+                <div class="section-title">🍽 Объект оценки соответствия</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">Тип производства</span><span class="info-value">серийный выпуск</span></div>
+                    <div class="info-item"><span class="info-label">Наименование объекта</span><span class="info-value">кулинарные изделия</span></div>
+                    <div class="info-item"><span class="info-label">Торговая марка</span><span class="info-value">«МАХ»</span></div>
+                    <div class="info-item"><span class="info-label">Идентифицирующие признаки</span><span class="info-value">Корн-Дог, картонная упаковка</span></div>
+                    <div class="info-item"><span class="info-label">Документ изготовления</span><span class="info-value">СТ PK 1402-2005 «Кулинарные изделия»</span></div>
+                </div>
+            </div>
+
+            <!-- Заявитель -->
+            <div class="section">
+                <div class="section-title">🏢 Заявитель</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">Наименование</span><span class="info-value">Индивидуальный Предприниматель «Квансон»</span></div>
+                    <div class="info-item"><span class="info-label">Страна</span><span class="info-value">Казахстан (KZ)</span></div>
+                    <div class="info-item"><span class="info-label">БИН / Идентификатор</span><span class="info-value">980203350072</span></div>
+                    <div class="info-item"><span class="info-label">Юридический адрес</span><span class="info-value">г. Усть-Каменогорск, ул. Бакинская, д. 2, 070000</span></div>
+                    <div class="info-item"><span class="info-label">Контактные данные</span><span class="info-value">📞 +77764344499 &nbsp;|&nbsp; ✉ birzhankumarbekov1998@gmail.com</span></div>
+                </div>
+                <div class="sub-section">
+                    <div class="info-item"><span class="info-label">Лицо, принявшее декларацию</span><span class="info-value">Құмарбеков Біржан Болатбекұлы (директор)</span></div>
+                </div>
+            </div>
+
+            <!-- Орган по оценке соответствия -->
+            <div class="section">
+                <div class="section-title">🏛 Орган по сертификации</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">Полное наименование</span><span class="info-value">Общество с ограниченной ответственностью "Надежные документы", орган по сертификации продукции</span></div>
+                    <div class="info-item"><span class="info-label">Регистрационный номер</span><span class="info-value">BY/117 17.01</span></div>
+                    <div class="info-item"><span class="info-label">Аттестат аккредитации</span><span class="info-value">выдан 02.07.2020</span></div>
+                    <div class="info-item"><span class="info-label">Руководитель</span><span class="info-value">Начальник отдела сертификации</span></div>
+                    <div class="info-item"><span class="info-label">Адрес (юр.)</span><span class="info-value">г. Минск, ул. Логойский тракт, д. 15, корпус 4, офис 313, 220113</span></div>
+                    <div class="info-item"><span class="info-label">Адрес деятельности</span><span class="info-value">г. Минск, ул. Логойский тракт, д. 19, корпус 4, пом. 18, 220090</span></div>
+                </div>
+            </div>
+
+            <!-- Эксперты и примечания -->
+            <div class="section">
+                <div class="section-title">📝 Эксперты и дополнительная информация</div>
+                <div class="info-grid">
+                    <div class="info-item"><span class="info-label">Эксперты</span><span class="info-value">Дубовская Надежда Михайловна, Усович Светлана Александровна</span></div>
+                    <div class="info-item"><span class="info-label">Приложение к документу</span><span class="info-value">информация отсутствует (порядковый номер, листы не указаны)</span></div>
+                    <div class="info-item"><span class="info-label">Признак включения в единый перечень</span><span class="info-value">Нет</span></div>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                ⚡ Сведения актуальны на момент выписки из реестра. Документ действителен до 27 марта 2029 года.<br>
+                Данные представлены на основе официального документа об оценке соответствия.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
